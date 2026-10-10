@@ -289,7 +289,7 @@ window.BHA_DATA = {
 
   /* ------------------------------------------------------------------------
      INSTRUCTORS — the Academy's panel of experts.
-     • image: portrait in assets/images/instructors/ (640×800, 4:5, WebP)
+     • image: portrait file placed next to index.html (640×800, 4:5, WebP)
      • badge: short label shown on the photo (e.g. the person's role in the Center)
      • years: optional number, shown as "+20 years of experience"
      • specializations: the first three appear on the card, all of them in the profile
@@ -297,7 +297,7 @@ window.BHA_DATA = {
      ------------------------------------------------------------------------ */
   instructors: [
     {
-      image: 'assets/images/instructors/ahmed-hassan-abdelshafi.webp',
+      image: 'ahmed-hassan-abdelshafi.webp',
       years: 20,
       ar: {
         name: 'عميد/ أحمد حسن عبد الشافي',
@@ -333,7 +333,7 @@ window.BHA_DATA = {
       }
     },
     {
-      image: 'assets/images/instructors/mohamed-abdelbasset.webp',
+      image: 'mohamed-abdelbasset.webp',
       ar: {
         name: 'لواء أركان حرب (م) دكتور/ محمد عبد الباسط محمد علي',
         badge: 'مستشار المركز',
@@ -360,7 +360,7 @@ window.BHA_DATA = {
       }
     },
     {
-      image: 'assets/images/instructors/ahmed-sayed.webp',
+      image: 'ahmed-sayed.webp',
       years: 20,
       ar: {
         name: 'عقيد (م)/ أحمد سيد',
@@ -386,7 +386,7 @@ window.BHA_DATA = {
       }
     },
     {
-      image: 'assets/images/instructors/nermeen-ahmed-saeed.webp',
+      image: 'nermeen-ahmed-saeed.webp',
       ar: {
         name: 'د/ نرمين أحمد سعيد',
         badge: 'هيئة الخبراء',

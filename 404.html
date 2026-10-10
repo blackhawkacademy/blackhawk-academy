@@ -63,14 +63,14 @@
 </head>
 <body>
   <main>
-    <img class="emblem" data-src="assets/images/brand/emblem.webp" alt="شعار أكاديمية بلاك هوك" width="780" height="700">
+    <img class="emblem" data-src="emblem.webp" alt="شعار أكاديمية بلاك هوك" width="780" height="700">
     <p class="code">404</p>
     <h1>الصفحة التي تبحث عنها غير موجودة</h1>
     <p>ربما نُقل الرابط أو كُتب بشكل غير صحيح.</p>
     <p class="en" lang="en">Page not found</p>
     <div class="actions">
       <a class="gold" data-home href="/">العودة إلى الرئيسية</a>
-      <a data-home-en href="/en/" lang="en">Back to home</a>
+      <a data-home-en href="/en.html" lang="en">Back to home</a>
     </div>
   </main>
   <script>
@@ -83,7 +83,7 @@
       var candidates = /\.github\.io$/.test(location.hostname) && first ? ['/' + first + '/', '/'] : ['/'];
       function use(base) {
         document.querySelector('[data-home]').href = base;
-        document.querySelector('[data-home-en]').href = base + 'en/';
+        document.querySelector('[data-home-en]').href = base + 'en.html';
       }
       (function tryNext(i) {
         use(candidates[i]);

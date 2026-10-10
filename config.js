@@ -49,12 +49,12 @@ window.BHA_CONFIG = {
     telegram: ''
   },
 
-  /* Film section. An MP4 (H.264, under 25 MB) in assets/videos/.
+  /* Film section. An MP4 (H.264, under 25 MB) placed next to index.html.
      Leave src '' to show a finished “coming soon” state with no play button.
      poster = still shown before playback, duration = label in the frame corner. */
   video: {
-    src: 'assets/videos/academy-interview.mp4',
-    poster: 'assets/videos/academy-interview-poster.webp',
+    src: 'academy-interview.mp4',
+    poster: 'academy-interview-poster.webp',
     duration: '03:22'
   },
 

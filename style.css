@@ -919,7 +919,10 @@ html[lang="en"] .hero__motto {
   position: absolute;
   inset: 0;
   mix-blend-mode: overlay;
-  background: linear-gradient(100deg, transparent 38%, rgba(255, 240, 205, 0.85) 50%, transparent 62%) no-repeat;
+  /* the light only touches the emblem itself (Safari otherwise paints the whole box) */
+  -webkit-mask: url("emblem.webp") center / 100% 100% no-repeat;
+  mask: url("emblem.webp") center / 100% 100% no-repeat;
+  background: linear-gradient(100deg, transparent 38%, rgba(255, 240, 205, 0.7) 50%, transparent 62%) no-repeat;
   background-size: 300% 100%;
   background-position: 100% 0;
   translate: calc(var(--tx) * 6px) calc(var(--ty) * 6px);
