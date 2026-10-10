@@ -74,16 +74,22 @@
     </div>
   </main>
   <script>
-    // Works on both a custom domain (site at "/") and a project page ("/<repo>/").
+    // Finds the site's home whether it is served from a custom domain or
+    // <user>.github.io (site at "/"), or from <user>.github.io/<repo>/ (site at "/<repo>/").
     (function () {
-      var base = '/';
-      if (/\.github\.io$/.test(location.hostname)) {
-        var first = location.pathname.split('/')[1];
-        if (first) base = '/' + first + '/';
+      var emblem = document.querySelector('.emblem');
+      var file = emblem.getAttribute('data-src');
+      var first = location.pathname.split('/')[1];
+      var candidates = /\.github\.io$/.test(location.hostname) && first ? ['/' + first + '/', '/'] : ['/'];
+      function use(base) {
+        document.querySelector('[data-home]').href = base;
+        document.querySelector('[data-home-en]').href = base + 'en/';
       }
-      document.querySelector('[data-home]').href = base;
-      document.querySelector('[data-home-en]').href = base + 'en/';
-      document.querySelector('.emblem').src = base + document.querySelector('.emblem').getAttribute('data-src');
+      (function tryNext(i) {
+        use(candidates[i]);
+        emblem.onerror = i + 1 < candidates.length ? function () { tryNext(i + 1); } : null;
+        emblem.src = candidates[i] + file; // the base where the emblem loads is the site's home
+      })(0);
     })();
   </script>
 </body>
