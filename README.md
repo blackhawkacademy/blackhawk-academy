@@ -57,7 +57,7 @@ Addresses: Arabic `…/`, English `…/en.html`.
 ### Contact details, enquiry button, social links → `js/config.js`
 Fill in the empty strings. **Anything left empty stays hidden**, so the site never shows a broken link.
 
-* Every **Enquire Now** button follows this order: `enquiryUrl`, then WhatsApp, then email, then the Contact section.
+* Every **Enquire Now** button follows this order: `enquiryUrl`, then WhatsApp, otherwise the Contact section.
 * Phone numbers live in `contact.phones`; each one becomes its own tap-to-call card and footer line.
 * WhatsApp: digits only, with the country code (e.g. `201XXXXXXXXX`).
 * The contact section shows a tidy "coming soon" panel until at least one detail is set.
@@ -110,11 +110,11 @@ Section text lives directly in `index.html` (Arabic) and `en.html` (English). Ed
 
 ## Status
 
-Done: logo, 14 missions, 4 instructor profiles with photos, filmed interview, phones (010 6860 0700 and 011 0366 9668), location map, Instagram, Facebook.
+Done: logo, 14 missions, 4 instructor profiles with photos, filmed interview, phones (010 6860 0700 and 011 0366 9668), email (blackhawkacademy.eg@gmail.com), location map, Instagram, Facebook.
 
 Still optional / to add later:
 - [ ] **WhatsApp number**: once set in `js/config.js`, every "Enquire Now" button opens a WhatsApp chat (right now they scroll to the contact section)
-- [ ] Email address, opening hours, written street address
+- [ ] Opening hours, written street address
 - [ ] Photographs of facilities / training (to replace the six designed tiles in "Training Environment")
 - [ ] Final domain name (for canonical URLs, social previews and the sitemap; see `deployment.md`)
 - [ ] Privacy policy page (optional, `privacyUrl`)

@@ -19,7 +19,7 @@ window.BHA_CONFIG = {
   domain: '',
 
   contact: {
-    email: '',            // e.g. 'info@blackhawkacademy.com'
+    email: 'blackhawkacademy.eg@gmail.com',
     // Phone numbers: `display` is shown exactly as written, `intl` is dialled when tapped.
     // Add or remove lines to add or remove numbers.
     phones: [
@@ -36,7 +36,7 @@ window.BHA_CONFIG = {
   },
 
   /* Where every “Enquire Now” button goes.
-     Priority: enquiryUrl → WhatsApp → email → the contact section. */
+     Priority: enquiryUrl → WhatsApp → the contact section (phones, email and map). */
   enquiryUrl: '',         // e.g. an external application form (Google Form, Typeform…)
 
   social: {

@@ -73,10 +73,7 @@
   function enquiryFor(topic) {
     if (cfg.enquiryUrl) return { href: cfg.enquiryUrl, external: true };
     if (contact.whatsapp) return { href: whatsappUrl(topic), external: true };
-    if (contact.email) {
-      var subject = encodeURIComponent((isAr ? 'استفسار' : 'Enquiry') + (topic ? ' — ' + topic : ''));
-      return { href: 'mailto:' + contact.email + '?subject=' + subject, external: false };
-    }
+    // otherwise go to the contact section, where every channel (phones, email, map) is listed
     return { href: '#contact', external: false };
   }
 
