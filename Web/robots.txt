@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# After your domain is live, uncomment and update:
-# Sitemap: https://YOUR-DOMAIN/sitemap.xml
