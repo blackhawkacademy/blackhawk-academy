@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-base="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>أكاديمية بلاك هوك | درّب • احمِ • قُد</title>
+  <meta name="description" content="أكاديمية بلاك هوك — منظومة تدريبية متكاملة لتأهيل القيادات والكوادر النخبوية عبر أربع عشرة مهمة تخصصية، من إدارة الأزمات والتفاوض إلى الحماية المدنية والإسعافات الأولية.">
+  <meta name="theme-color" content="#080909">
+  <meta name="color-scheme" content="dark">
+
+  <!-- When the domain is known, replace YOUR-DOMAIN and uncomment (see docs/deployment.md):
+  <link rel="canonical" href="https://YOUR-DOMAIN/">
+  <link rel="alternate" hreflang="ar" href="https://YOUR-DOMAIN/">
+  <link rel="alternate" hreflang="en" href="https://YOUR-DOMAIN/en/">
+  <link rel="alternate" hreflang="x-default" href="https://YOUR-DOMAIN/">
+  -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="أكاديمية بلاك هوك — Black Hawk Academy">
+  <meta property="og:title" content="أكاديمية بلاك هوك | درّب • احمِ • قُد">
+  <meta property="og:description" content="منظومة تدريبية متكاملة لبناء الكوادر وصناعة الأمن — أربع عشرة مهمة تخصصية.">
+  <!-- Social previews need an absolute URL: change to https://YOUR-DOMAIN/assets/images/brand/og-image.jpg -->
+  <meta property="og:image" content="assets/images/brand/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/icon-512.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@500..800&family=Saira:wdth,wght@100..125,400..800&display=swap">
+  <link rel="preload" as="image" href="assets/images/brand/emblem.webp" type="image/webp" fetchpriority="high">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/config.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <!-- Icon sprite ----------------------------------------------------------->
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 20V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.8 4.6-2.2 1.4a11.5 11.5 0 0 0 5.4 5.4l1.4-2.2 4.6 1.8v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4.5 19.5l1.2-3.6A8.2 8.2 0 1 1 9 18.6z"/><path d="M9.2 8.6c.2-.5.6-.6.9-.6h.5l.9 2.1-.7.9a5 5 0 0 0 2.3 2.3l.9-.7 2.1.9v.5c0 .3-.1.7-.6.9-.7.4-1.6.4-2.5 0a7.5 7.5 0 0 1-3.8-3.8c-.4-.9-.4-1.8 0-2.5z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.5-2.5h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" transform="translate(2.4 2.4) scale(.8)" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2.5"/><path d="M8 10.5v6M8 7.5v.01M11.5 16.5v-6M11.5 13.2c0-1.7 1-2.7 2.4-2.7s2.1 1 2.1 2.7v3.3"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.2 9.2v5.6l4.8-2.8z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8.9v3h2.6V21"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14.5 3.5v11.3a3.7 3.7 0 1 1-3.7-3.7"/><path d="M14.5 3.5c.4 2.6 2.2 4.4 5 4.6"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21 4.5L3.5 11.3l5.6 2 2 6.2 3.2-3.9 4.8 3.6z"/><path d="M9.1 13.3l8.4-6"/></symbol>
+    <symbol id="i-pro" viewBox="0 0 24 24"><path d="M12 3l7 2.8v5.6c0 4.3-2.9 7.9-7 9.6-4.1-1.7-7-5.3-7-9.6V5.8z"/><circle cx="12" cy="10.2" r="2.4"/><path d="M8.2 16.2a4.3 4.3 0 0 1 7.6 0"/></symbol>
+    <symbol id="i-crosshair" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5"/><circle cx="12" cy="12" r="3"/><path d="M12 2.5v4M12 17.5v4M2.5 12h4M17.5 12h4"/></symbol>
+    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M12 3l7 2.8v5.6c0 4.3-2.9 7.9-7 9.6-4.1-1.7-7-5.3-7-9.6V5.8z"/><path d="M8.7 12.1l2.3 2.3 4.4-4.6"/></symbol>
+    <symbol id="i-team" viewBox="0 0 24 24"><circle cx="12" cy="9.5" r="2.3"/><path d="M7.8 18a4.2 4.2 0 0 1 8.4 0"/><circle cx="5.8" cy="11.5" r="1.8"/><path d="M2.6 18.2a3.3 3.3 0 0 1 4.3-3.1"/><circle cx="18.2" cy="11.5" r="1.8"/><path d="M21.4 18.2a3.3 3.3 0 0 0-4.3-3.1"/><path d="M12 2.6l.75 1.5 1.65.25-1.2 1.15.3 1.65L12 6.4l-1.5.75.3-1.65-1.2-1.15 1.65-.25z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 5.6c3-1.1 6-.9 9 1 3-1.9 6-2.1 9-1v13c-3-1.1-6-.9-9 1-3-1.9-6-2.1-9-1z"/><path d="M12 6.6v13"/></symbol>
+    <symbol id="i-rank" viewBox="0 0 24 24"><path d="M5.5 13.5l6.5-4 6.5 4M5.5 18.5l6.5-4 6.5 4"/><path d="M12 2.5l1 2.1 2.3.3-1.7 1.6.4 2.3-2-1.1-2 1.1.4-2.3-1.7-1.6 2.3-.3z"/></symbol>
+    <symbol id="i-radar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><path d="M12 12l6-6"/><circle cx="15.6" cy="14.6" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-dialogue" viewBox="0 0 24 24"><path d="M3.5 5h10a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H8.5l-3.5 3v-3H3.5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M17 9h3.5a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H19v3l-3.5-3h-4a1 1 0 0 1-1-1v-1.5"/></symbol>
+    <symbol id="i-podium" viewBox="0 0 24 24"><rect x="9.5" y="2.5" width="5" height="8" rx="2.5"/><path d="M7 8.5a5 5 0 0 0 10 0M12 13.5V15"/><path d="M6 15h12l-1.5 6.5h-9z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.3 2.4 3.5 5.2 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.2-3.5-8.5s1.2-6.1 3.5-8.5z"/></symbol>
+    <symbol id="i-peace" viewBox="0 0 24 24"><path d="M12 3l7 2.8v5.6c0 4.3-2.9 7.9-7 9.6-4.1-1.7-7-5.3-7-9.6V5.8z"/><path d="M12 15.6s-3.4-2.1-3.4-4.4a1.8 1.8 0 0 1 3.4-.9 1.8 1.8 0 0 1 3.4.9c0 2.3-3.4 4.4-3.4 4.4z"/></symbol>
+    <symbol id="i-plan" viewBox="0 0 24 24"><rect x="4.5" y="4" width="15" height="17" rx="1.5"/><path d="M9 4V2.5h6V4"/><circle cx="12" cy="13" r="3.2"/><path d="M12 8.3v1.5M12 16.2v1.5M7.3 13h1.5M15.2 13h1.5"/></symbol>
+    <symbol id="i-mind" viewBox="0 0 24 24"><path d="M14.5 21v-3h2a1.5 1.5 0 0 0 1.5-1.5V14l1.6-.6-1.6-3.1A7 7 0 1 0 7.5 15.6V21"/><path d="M11.5 7l2.6 1v1.9c0 1.6-1.1 2.9-2.6 3.4-1.5-.5-2.6-1.8-2.6-3.4V8z"/></symbol>
+    <symbol id="i-growth" viewBox="0 0 24 24"><circle cx="8" cy="8" r="2.6"/><path d="M3.5 18.5a4.5 4.5 0 0 1 9 0"/><path d="M14 17l3-3.2 2 2 3-4.3"/><path d="M19.4 11.5H22V14"/></symbol>
+    <symbol id="i-medical" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V4.5h7V7"/><path d="M12 10.5v6M9 13.5h6"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 21a6.2 6.2 0 0 0 6.2-6.2c0-3.6-2.6-5.6-3.6-8.8-1.6 1.5-2.1 3.1-2.1 4.6-1-1-1.6-2.5-1.6-4.1-2.9 2-5.1 4.6-5.1 8.3A6.2 6.2 0 0 0 12 21z"/><path d="M12 21a2.6 2.6 0 0 1-2.6-2.6c0-1.8 1.4-2.9 2.6-4.6 1.2 1.7 2.6 2.8 2.6 4.6A2.6 2.6 0 0 1 12 21z"/></symbol>
+    <symbol id="i-guard" viewBox="0 0 24 24"><path d="M12 3l7 2.8v5.6c0 4.3-2.9 7.9-7 9.6-4.1-1.7-7-5.3-7-9.6V5.8z"/><path d="M13 7.2l-3.4 5.3h2.9l-1.5 4.3 3.4-5.3h-2.9z"/></symbol>
+    <symbol id="i-supply" viewBox="0 0 24 24"><path d="M2.5 7.5L7 5.2l4.5 2.3v5L7 14.8l-4.5-2.3z"/><path d="M2.5 7.5L7 9.8l4.5-2.3M7 9.8v5"/><path d="M11.5 10h3.8a3 3 0 0 1 3 3v3"/><circle cx="18.3" cy="18.3" r="2.3"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16M8 20h8M5 7h14"/><path d="M5 7l-2.5 6h5zM19 7l-2.5 6h5z"/><path d="M2.5 13a2.5 2.5 0 0 0 5 0M16.5 13a2.5 2.5 0 0 0 5 0"/></symbol>
+    <symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="14.5" r="5.5"/><path d="M8.6 10.2L6 3h4l2 4.5L14 3h4l-2.6 7.2"/><path d="M12 12l.8 1.6 1.7.25-1.25 1.2.3 1.7-1.55-.8-1.55.8.3-1.7-1.25-1.2 1.7-.25z"/></symbol>
+    <symbol id="i-steps" viewBox="0 0 24 24"><path d="M3 20h5v-5h5v-5h5V5h3"/></symbol>
+  </svg>
+
+  <!-- Header ---------------------------------------------------------------->
+  <header class="site-header" data-header>
+    <div class="announce" data-announce hidden>
+      <div class="announce__inner">
+        <div class="announce__bar container">
+          <span class="announce__dot" aria-hidden="true"></span>
+          <span data-announce-text></span>
+          <a class="announce__link" href="#missions" data-announce-link>
+            <span data-announce-link-text></span>
+            <svg class="icon icon--flip" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <button class="announce__close" type="button" aria-label="إغلاق الإعلان" data-announce-close>
+            <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="أكاديمية بلاك هوك — الرئيسية">
+        <picture>
+          <source srcset="assets/images/brand/emblem-sm.webp" type="image/webp">
+          <img class="brand__mark" src="assets/images/brand/emblem-sm.png" alt="" width="260" height="233">
+        </picture>
+        <span class="brand__text">
+          <span class="brand__name" lang="en"><span class="text-silver">BLACK</span> <span class="text-gold">HAWK</span></span>
+          <span class="brand__sub">أكاديمية بلاك هوك</span>
+        </span>
+      </a>
+
+      <nav aria-label="القائمة الرئيسية">
+        <ul class="nav__links" data-nav-links>
+          <li><a class="nav__link" href="#home">الرئيسية</a></li>
+          <li><a class="nav__link" href="#about">عن الأكاديمية</a></li>
+          <li><a class="nav__link" href="#missions">المهام التدريبية</a></li>
+          <li><a class="nav__link" href="#instructors">المدربون</a></li>
+          <li><a class="nav__link" href="#environment">بيئة التدريب</a></li>
+          <li><a class="nav__link" href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="lang-switch" href="en/" hreflang="en" lang="en" data-lang-switch aria-label="English version"><span class="latin">EN</span></a>
+        <a class="btn btn--gold btn--sm nav__cta" href="#contact" data-enquire>استفسر الآن</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="فتح القائمة" data-nav-toggle data-label-open="فتح القائمة" data-label-close="إغلاق القائمة">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu ----------------------------------------------------------->
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <nav aria-label="قائمة الجوال">
+      <ul class="mobile-menu__list">
+        <li style="--i:0"><a class="mobile-menu__link" href="#home"><span>٠١</span>الرئيسية</a></li>
+        <li style="--i:1"><a class="mobile-menu__link" href="#about"><span>٠٢</span>عن الأكاديمية</a></li>
+        <li style="--i:2"><a class="mobile-menu__link" href="#missions"><span>٠٣</span>المهام التدريبية</a></li>
+        <li style="--i:3"><a class="mobile-menu__link" href="#instructors"><span>٠٤</span>المدربون</a></li>
+        <li style="--i:4"><a class="mobile-menu__link" href="#environment"><span>٠٥</span>بيئة التدريب</a></li>
+        <li style="--i:5"><a class="mobile-menu__link" href="#contact"><span>٠٦</span>تواصل معنا</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__footer">
+      <a class="btn btn--gold" href="#contact" data-enquire>استفسر الآن <svg class="icon icon--flip" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <p class="mobile-menu__motto">درّب • احمِ • قُد</p>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- HERO ---------------------------------------------------------------->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__lines"></div>
+        <canvas class="hero__canvas" data-embers></canvas>
+        <div class="hero__vignette"></div>
+      </div>
+
+      <div class="container hero__layout">
+        <div class="hero__content">
+          <p class="eyebrow">أكاديمية بلاك هوك</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="line">الانضباط يصنع الشخصية،</span>
+            <span class="line">والتميّز <em>يصنع القادة.</em></span>
+          </h1>
+          <p class="hero__lead">نُعدّ كوادر نخبوية قادرة على القيادة وإدارة الأزمات وصناعة الأمن، عبر منظومة تدريبية متكاملة تجمع بين المعرفة والمهارة الميدانية والانضباط.</p>
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="#missions">استكشف مهام المركز <svg class="icon icon--flip" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--ghost" href="#instructors">تعرّف على المدربين</a>
+          </div>
+          <p class="hero__motto"><span>درّب</span><i aria-hidden="true"></i><span>احمِ</span><i aria-hidden="true"></i><span>قُد</span></p>
+        </div>
+
+        <div class="hero__visual">
+          <div class="crest" data-crest>
+            <div class="crest__float">
+              <div class="crest__rays" aria-hidden="true"></div>
+              <div class="crest__glow" aria-hidden="true"></div>
+              <svg class="crest__seal" viewBox="0 0 800 800" aria-hidden="true" focusable="false">
+                <defs>
+                  <path id="seal-path" d="M400 400m-338 0a338 338 0 1 1 676 0a338 338 0 1 1-676 0"/>
+                </defs>
+                <circle class="seal__ring seal__ring--outer" cx="400" cy="400" r="392" pathLength="1" transform="rotate(-90 400 400)"/>
+                <g class="seal__ticks-wrap"><g class="seal__spin seal__spin--rev"><circle class="seal__ticks" cx="400" cy="400" r="372"/></g></g>
+                <g class="seal__text-wrap">
+                  <g class="seal__spin">
+                    <text class="seal__text"><textPath href="#seal-path" textLength="2110" lengthAdjust="spacing">BLACK HAWK ACADEMY • TRAIN • PROTECT • LEAD • BUILDING PROFESSIONALS • SECURING TOMORROW •</textPath></text>
+                  </g>
+                </g>
+                <circle class="seal__ring seal__ring--inner" cx="400" cy="400" r="306" pathLength="1" transform="rotate(-90 400 400)"/>
+              </svg>
+              <svg class="crest__trace" viewBox="0 0 780 700" aria-hidden="true" focusable="false">
+                <path class="trace" pathLength="1" d="M467 32L725 132L724.5 212L706.5 382C700 402 693.8 424 687 442C680.2 460 674 474 665.5 490C657 506 647.8 522 636 538C624.2 554 605.9 574 594.5 586C583.1 598 577.6 602 567.5 610C557.4 618 546.1 626 534 634C521.9 642 506.2 650.8 495 658C483.8 665.2 476.3 670.7 467 677"/>
+                <path class="trace" pathLength="1" d="M467 32L209 132L209.5 212L227.5 382C234 402 240.2 424 247 442C253.8 460 260 474 268.5 490C277 506 286.2 522 298 538C309.8 554 328.1 574 339.5 586C350.9 598 356.4 602 366.5 610C376.6 618 387.9 626 400 634C412.1 642 427.8 650.8 439 658C450.2 665.2 457.7 670.7 467 677"/>
+              </svg>
+              <picture class="crest__emblem">
+                <source srcset="assets/images/brand/emblem.webp" type="image/webp">
+                <img src="assets/images/brand/emblem.png" width="780" height="700" alt="شعار أكاديمية بلاك هوك: صقر أسود بأجنحة ممتدة فوق درع ذهبي يضم مبنى الأكاديمية وكوادرها" fetchpriority="high" decoding="async">
+              </picture>
+              <div class="crest__shine" aria-hidden="true"></div>
+              <span class="crest__glint" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <div class="wordmark" role="img" aria-label="Black Hawk Academy — Train, Protect, Lead" lang="en">
+            <span class="wordmark__name" aria-hidden="true">
+              <span class="wordmark__word wordmark__word--silver"><span class="wordmark__char" style="--i:0">B</span><span class="wordmark__char" style="--i:1">L</span><span class="wordmark__char" style="--i:2">A</span><span class="wordmark__char" style="--i:3">C</span><span class="wordmark__char" style="--i:4">K</span></span>
+              <span class="wordmark__word wordmark__word--gold"><span class="wordmark__char" style="--i:5">H</span><span class="wordmark__char" style="--i:6">A</span><span class="wordmark__char" style="--i:7">W</span><span class="wordmark__char" style="--i:8">K</span></span>
+            </span>
+            <span class="wordmark__academy" aria-hidden="true"><span class="wordmark__rule"></span><span class="wordmark__academy-text">ACADEMY</span><span class="wordmark__rule"></span></span>
+            <span class="wordmark__motto" aria-hidden="true">TRAIN <b>•</b> PROTECT <b>•</b> LEAD</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#pillars" aria-label="انتقل إلى المحتوى التالي">
+        <span aria-hidden="true">اكتشف</span>
+        <span class="scroll-cue__line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- PILLARS (from the emblem) ------------------------------------------->
+    <section class="pillars" id="pillars" aria-label="ركائز الأكاديمية">
+      <div class="container">
+        <ul class="pillars__list" role="list" data-reveal-group>
+          <li class="pillar" data-reveal="up">
+            <svg class="icon pillar__icon" aria-hidden="true"><use href="#i-pro"/></svg>
+            <span class="pillar__title">تدريب احترافي</span>
+            <span class="pillar__en" lang="en">Professional Training</span>
+          </li>
+          <li class="pillar" data-reveal="up">
+            <svg class="icon pillar__icon" aria-hidden="true"><use href="#i-crosshair"/></svg>
+            <span class="pillar__title">مهارات واقعية</span>
+            <span class="pillar__en" lang="en">Real-World Skills</span>
+          </li>
+          <li class="pillar" data-reveal="up">
+            <svg class="icon pillar__icon" aria-hidden="true"><use href="#i-shield-check"/></svg>
+            <span class="pillar__title">الأمن والسلامة</span>
+            <span class="pillar__en" lang="en">Safety &amp; Security</span>
+          </li>
+          <li class="pillar" data-reveal="up">
+            <svg class="icon pillar__icon" aria-hidden="true"><use href="#i-team"/></svg>
+            <span class="pillar__title">القيادة والانضباط</span>
+            <span class="pillar__en" lang="en">Leadership &amp; Discipline</span>
+          </li>
+          <li class="pillar" data-reveal="up">
+            <svg class="icon pillar__icon" aria-hidden="true"><use href="#i-book"/></svg>
+            <span class="pillar__title">التميّز المعرفي</span>
+            <span class="pillar__en" lang="en">Knowledge Excellence</span>
+          </li>
+        </ul>
+      </div>
+      <div class="pillars__statement">
+        <div class="container"><p>نبني المحترفين. ونؤمّن الغد.</p></div>
+      </div>
+    </section>
+
+    <!-- ABOUT ---------------------------------------------------------------->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <span class="about__ghost" aria-hidden="true">BLACK HAWK</span>
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__content" data-reveal-group>
+            <p class="eyebrow" data-reveal="up">عن الأكاديمية</p>
+            <h2 class="section-title" id="about-title" data-reveal="up">أكثر من تدريب. <em>معيارٌ للتميّز.</em></h2>
+            <p class="about__statement" data-reveal="up">رسالتنا ترسيخ دور الأكاديمية في بناء الكوادر وصناعة الأمن، وتوحيد الجهود التدريبية نحو رؤية وطنية شاملة.</p>
+            <p class="about__text" data-reveal="up">في أكاديمية بلاك هوك يبدأ التدريب بالانضباط وينتهي بالأثر. نجمع بين التخطيط الاستراتيجي وإدارة الجودة التدريبية والحوكمة وبناء الشراكات الفاعلة، لنُخرّج كوادر مؤهلة تقود التغيير بكفاءة واحترافية ضمن منظومة تدريبية مستدامة.</p>
+            <a class="link-arrow" href="#missions" data-reveal="up">استكشف مهام المركز <svg class="icon icon--flip" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+
+          <figure class="about__media" data-reveal="scale">
+            <div class="about__frame">
+              <picture>
+                <source type="image/webp" srcset="assets/images/about/precision-target-760.webp 760w, assets/images/about/precision-target.webp 1254w" sizes="(max-width: 1024px) 92vw, 470px">
+                <img src="assets/images/about/precision-target.jpg" width="1254" height="1002" alt="سهم ذهبي يصيب مركز الهدف تماماً — رمز للدقة ووضوح الغاية" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <span class="corners" aria-hidden="true"><i></i></span>
+            <span class="about__badge" aria-hidden="true"><img src="assets/images/brand/emblem-sm.webp" alt="" width="260" height="233" loading="lazy"></span>
+            <figcaption class="about__plaque">
+              <strong>أهداف المركز</strong>
+              <span>الرؤية والرسالة والأهداف الاستراتيجية للأكاديمية</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="objectives" data-reveal-group>
+          <article class="objective" data-reveal="up">
+            <span class="objective__num">01</span>
+            <h3>دور المركز</h3>
+            <ul class="check-list" role="list">
+              <li>ترسيخ رسالة الأكاديمية في بناء الكوادر وصناعة الأمن</li>
+              <li>توحيد الجهود التدريبية نحو رؤية وطنية شاملة</li>
+            </ul>
+          </article>
+          <article class="objective" data-reveal="up">
+            <span class="objective__num">02</span>
+            <h3>المحاور التدريبية الرئيسية</h3>
+            <ul class="check-list" role="list">
+              <li>التخطيط الاستراتيجي وإدارة الجودة التدريبية</li>
+              <li>الحوكمة وبناء الشراكات الفاعلة</li>
+            </ul>
+          </article>
+          <article class="objective" data-reveal="up">
+            <span class="objective__num">03</span>
+            <h3>المخرجات المتوقعة</h3>
+            <ul class="check-list" role="list">
+              <li>كوادر مؤهلة تقود التغيير بكفاءة واحترافية</li>
+              <li>منظومة تدريبية مستدامة ومعتمدة</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSIONS (rendered from js/data.js) --------------------------------->
+    <section class="section missions" id="missions" aria-labelledby="missions-title">
+      <div class="container">
+        <div class="section-head" data-reveal-group>
+          <p class="eyebrow" data-reveal="up">مهام المركز</p>
+          <h2 class="section-title" id="missions-title" data-reveal="up">أربع عشرة مهمة. <em>منظومة واحدة.</em></h2>
+          <p class="section-lead" data-reveal="up">من القيادة وإدارة الأزمات إلى الإسعافات الأولية وسلاسل الإمداد — لكل مهمة دورٌ واضح، ومحاور تدريبية محددة، ومخرجات متوقعة.</p>
+        </div>
+        <div class="missions__layout" data-reveal="up">
+          <div class="missions__index" role="tablist" aria-label="مهام المركز" aria-orientation="vertical" data-mission-tabs></div>
+          <div class="missions__stage" data-mission-stage></div>
+        </div>
+        <noscript><p>يرجى تفعيل JavaScript لعرض تفاصيل مهام المركز الأربع عشرة.</p></noscript>
+      </div>
+    </section>
+
+    <!-- STANDARDS ----------------------------------------------------------->
+    <section class="section standards" id="standards" aria-labelledby="standards-title">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal-group>
+          <p class="eyebrow" data-reveal="up">فلسفتنا التدريبية</p>
+          <h2 class="section-title" id="standards-title" data-reveal="up">ثلاث كلمات. <em>معيار واحد.</em></h2>
+          <p class="section-lead" data-reveal="up">شعارنا ليس عبارة تُقال، بل منهج يحكم كل ساعة تدريب: نُدرّب لنحمي، ونحمي لنقود.</p>
+        </div>
+
+        <ol class="triad" role="list" data-reveal-group>
+          <li class="triad__item" data-reveal="up">
+            <div class="triad__top"><span class="triad__num">01</span><span class="triad__en" lang="en">TRAIN</span></div>
+            <h3 class="triad__word">درّب</h3>
+            <p>تدريب احترافي يجمع بين المعرفة والمهارة الميدانية، بمعايير تواكب أفضل الممارسات.</p>
+          </li>
+          <li class="triad__item" data-reveal="up">
+            <div class="triad__top"><span class="triad__num">02</span><span class="triad__en" lang="en">PROTECT</span></div>
+            <h3 class="triad__word">احمِ</h3>
+            <p>جاهزية واستجابة ووقاية تحفظ الأرواح والمؤسسات وأمن المجتمع.</p>
+          </li>
+          <li class="triad__item" data-reveal="up">
+            <div class="triad__top"><span class="triad__num">03</span><span class="triad__en" lang="en">LEAD</span></div>
+            <h3 class="triad__word">قُد</h3>
+            <p>قيادة تتخذ القرار تحت الضغط، وتصنع الأثر بانضباط ومسؤولية.</p>
+          </li>
+        </ol>
+
+        <ul class="values" role="list" data-reveal-group>
+          <li class="value" data-reveal="up">
+            <svg class="icon" aria-hidden="true"><use href="#i-rank"/></svg>
+            <div><h3>الانضباط</h3><p>الالتزام بالمعايير في كل تفصيل؛ فالانضباط أساس كل إنجاز.</p></div>
+          </li>
+          <li class="value" data-reveal="up">
+            <svg class="icon" aria-hidden="true"><use href="#i-scale"/></svg>
+            <div><h3>النزاهة</h3><p>الأمانة والشفافية في القول والعمل.</p></div>
+          </li>
+          <li class="value" data-reveal="up">
+            <svg class="icon" aria-hidden="true"><use href="#i-shield-check"/></svg>
+            <div><h3>المسؤولية</h3><p>تحمّل نتائج القرار والوفاء بالواجب.</p></div>
+          </li>
+          <li class="value" data-reveal="up">
+            <svg class="icon" aria-hidden="true"><use href="#i-team"/></svg>
+            <div><h3>العمل بروح الفريق</h3><p>فرق متماسكة تتكامل فيها الأدوار وتتوحد الأهداف.</p></div>
+          </li>
+          <li class="value" data-reveal="up">
+            <svg class="icon" aria-hidden="true"><use href="#i-medal"/></svg>
+            <div><h3>الاحترافية</h3><p>أداء متقن بمعايير عالية في التدريب والتنفيذ.</p></div>
+          </li>
+          <li class="value" data-reveal="up">
+            <svg class="icon" aria-hidden="true"><use href="#i-steps"/></svg>
+            <div><h3>التطوير المستمر</h3><p>تعلّم دائم ومراجعة مستمرة لرفع الجاهزية.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- STATS (figures taken from the Center's own mission deck) ----------->
+    <section class="stats" aria-label="الأكاديمية بالأرقام">
+      <div class="container">
+        <ul class="stats__list" role="list" data-reveal-group>
+          <li class="stat" data-reveal="up"><span class="stat__value" data-count="14">١٤</span><span class="stat__label">مهمة تخصصية</span></li>
+          <li class="stat" data-reveal="up"><span class="stat__value" data-count="28">٢٨</span><span class="stat__label">محوراً تدريبياً</span></li>
+          <li class="stat" data-reveal="up"><span class="stat__value" data-count="5">٥</span><span class="stat__label">ركائز للتميّز</span></li>
+          <li class="stat" data-reveal="up"><span class="stat__value" data-count="3">٣</span><span class="stat__label">مبادئ: درّب · احمِ · قُد</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- INSTRUCTORS (rendered from js/data.js) ------------------------------>
+    <section class="section instructors" id="instructors" aria-labelledby="instructors-title">
+      <div class="container">
+        <div class="instructors__head">
+          <div class="section-head" data-reveal-group>
+            <p class="eyebrow" data-reveal="up">هيئة الخبراء</p>
+            <h2 class="section-title" id="instructors-title" data-reveal="up">تعلّم ممّن <em>يقودون.</em></h2>
+            <p class="section-lead" data-reveal="up">جودة التدريب من جودة المدرب. تعرّف على هيئة الخبراء الذين يقودون برامج الأكاديمية، بخبرات أمنية وعسكرية وأكاديمية ومهنية متراكمة.</p>
+          </div>
+          <div data-reveal="up">
+            <a class="btn btn--ghost" href="#contact" data-enquire>استفسر عن البرامج <svg class="icon icon--flip" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <ul class="instructors__grid" role="list" data-instructors data-reveal-group></ul>
+      </div>
+
+      <dialog class="dialog profile-dialog" aria-labelledby="profile-name" data-profile-dialog>
+        <button class="dialog__close" type="button" aria-label="إغلاق" data-dialog-close>
+          <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+        <div class="profile">
+          <div class="profile__media"><img alt="" width="640" height="800" data-profile-img></div>
+          <div class="profile__body">
+            <p class="eyebrow" data-profile-index></p>
+            <h2 class="profile__name" id="profile-name" data-profile-name></h2>
+            <p class="profile__role" data-profile-role></p>
+            <p class="profile__years" data-profile-years hidden><strong></strong><span></span></p>
+            <p data-profile-bio></p>
+            <div class="profile__section">
+              <h3>المؤهلات</h3>
+              <ul class="check-list" role="list" data-profile-quals></ul>
+            </div>
+            <div class="profile__section">
+              <h3>مجالات التخصص</h3>
+              <ul class="chips" role="list" data-profile-specs></ul>
+            </div>
+            <div><a class="btn btn--gold" href="#contact" data-enquire data-dialog-close>استفسر الآن <svg class="icon icon--flip" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- TRAINING ENVIRONMENT ------------------------------------------------>
+    <!-- To add a photo to a tile, uncomment its <img> and point it to assets/images/facilities/. -->
+    <section class="section environment" id="environment" aria-labelledby="env-title">
+      <div class="container">
+        <div class="section-head" data-reveal-group>
+          <p class="eyebrow" data-reveal="up">بيئة التدريب</p>
+          <h2 class="section-title" id="env-title" data-reveal="up">بيئات تحاكي الواقع. <em>وجاهزية تُبنى بالممارسة.</em></h2>
+          <p class="section-lead" data-reveal="up">تدريب يتجاوز القاعة: محاكاة للأزمات، وتطبيقات ميدانية، وجلسات حوارية تنقل المتدرب من المعرفة إلى الأداء.</p>
+        </div>
+
+        <ul class="env__grid" role="list" data-reveal-group>
+          <li class="env-tile" data-reveal="up">
+            <div class="env-tile__media">
+              <svg class="icon env-tile__art" aria-hidden="true"><use href="#i-radar"/></svg>
+              <!-- <img src="assets/images/facilities/crisis-simulation.webp" alt="غرفة محاكاة الأزمات في الأكاديمية" width="1400" height="1000" loading="lazy"> -->
+            </div>
+            <div class="env-tile__caption">
+              <span class="env-tile__num">01</span>
+              <h3>محاكاة غرف الأزمات</h3>
+              <p>سيناريوهات واقعية لإدارة الأزمات واتخاذ القرار تحت الضغط.</p>
+            </div>
+          </li>
+          <li class="env-tile" data-reveal="up">
+            <div class="env-tile__media">
+              <svg class="icon env-tile__art" aria-hidden="true"><use href="#i-book"/></svg>
+              <!-- <img src="assets/images/facilities/academic-halls.webp" alt="" width="1200" height="800" loading="lazy"> -->
+            </div>
+            <div class="env-tile__caption">
+              <span class="env-tile__num">02</span>
+              <h3>القاعات الأكاديمية</h3>
+              <p>محاضرات وورش عمل في القيادة والتخطيط الاستراتيجي.</p>
+            </div>
+          </li>
+          <li class="env-tile" data-reveal="up">
+            <div class="env-tile__media">
+              <svg class="icon env-tile__art" aria-hidden="true"><use href="#i-crosshair"/></svg>
+              <!-- <img src="assets/images/facilities/field-training.webp" alt="" width="1200" height="800" loading="lazy"> -->
+            </div>
+            <div class="env-tile__caption">
+              <span class="env-tile__num">03</span>
+              <h3>التدريب الميداني</h3>
+              <p>تطبيق عملي للمهارات في بيئات تحاكي الواقع.</p>
+            </div>
+          </li>
+          <li class="env-tile" data-reveal="up">
+            <div class="env-tile__media">
+              <svg class="icon env-tile__art" aria-hidden="true"><use href="#i-guard"/></svg>
+              <!-- <img src="assets/images/facilities/combat-fitness.webp" alt="" width="1200" height="800" loading="lazy"> -->
+            </div>
+            <div class="env-tile__caption">
+              <span class="env-tile__num">04</span>
+              <h3>اللياقة القتالية</h3>
+              <p>الدفاع عن النفس والجاهزية البدنية.</p>
+            </div>
+          </li>
+          <li class="env-tile" data-reveal="up">
+            <div class="env-tile__media">
+              <svg class="icon env-tile__art" aria-hidden="true"><use href="#i-podium"/></svg>
+              <!-- <img src="assets/images/facilities/conference-hall.webp" alt="" width="1200" height="800" loading="lazy"> -->
+            </div>
+            <div class="env-tile__caption">
+              <span class="env-tile__num">05</span>
+              <h3>المؤتمرات والجلسات الحوارية</h3>
+              <p>فعاليات وجلسات حوارية بمستوى دولي.</p>
+            </div>
+          </li>
+          <li class="env-tile" data-reveal="up">
+            <div class="env-tile__media">
+              <svg class="icon env-tile__art" aria-hidden="true"><use href="#i-medical"/></svg>
+              <!-- <img src="assets/images/facilities/field-medical.webp" alt="" width="1200" height="800" loading="lazy"> -->
+            </div>
+            <div class="env-tile__caption">
+              <span class="env-tile__num">06</span>
+              <h3>التدريب الطبي الميداني</h3>
+              <p>الإنعاش القلبي والفرز الطبي وإدارة الإخلاء.</p>
+            </div>
+          </li>
+        </ul>
+        <p class="env__note"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg>تُضاف صور المرافق الفعلية للأكاديمية إلى هذا القسم قريباً.</p>
+      </div>
+    </section>
+
+    <!-- FILM ---------------------------------------------------------------->
+    <section class="section film" id="film" aria-labelledby="film-title">
+      <div class="container">
+        <div class="film__frame" data-reveal="scale">
+          <div class="film__poster" aria-hidden="true"><img src="assets/images/brand/emblem.webp" alt="" width="780" height="700" loading="lazy" data-video-poster></div>
+          <span class="corners" aria-hidden="true"><i></i></span>
+          <span class="film__timecode" aria-hidden="true">BHA — FILM 01</span>
+          <span class="film__timecode film__timecode--end" aria-hidden="true" data-video-duration>00:00:00:00</span>
+          <div class="film__content">
+            <p class="eyebrow">لقاء مصوّر</p>
+            <button class="play-btn" type="button" aria-label="تشغيل اللقاء المصوّر" data-video-open hidden>
+              <svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>
+            </button>
+            <h2 class="film__title" id="film-title">عِش <span class="text-gold">المعيار.</span></h2>
+            <p class="section-lead">شاهد اللقاء المصوّر، وتعرّف على أكاديمية بلاك هوك عن قرب.</p>
+            <p class="film__status" data-video-soon><span class="announce__dot" aria-hidden="true"></span>يُعرض الفيلم التعريفي هنا فور إطلاقه</p>
+          </div>
+        </div>
+      </div>
+
+      <dialog class="dialog video-dialog" aria-label="اللقاء المصوّر" data-video-dialog>
+        <button class="dialog__close" type="button" aria-label="إغلاق" data-dialog-close>
+          <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+        <video controls playsinline preload="none" data-video></video>
+      </dialog>
+    </section>
+
+    <!-- APPLY --------------------------------------------------------------->
+    <section class="section apply" id="apply" aria-labelledby="apply-title">
+      <img class="apply__emblem" src="assets/images/brand/emblem.webp" alt="" width="780" height="700" loading="lazy">
+      <div class="container apply__inner" data-reveal-group>
+        <div class="ornament" data-reveal="fade" aria-hidden="true"><span class="ornament__diamond"></span></div>
+        <h2 class="apply__title" id="apply-title" data-reveal="up">مسيرتك القادمة <span class="text-gold">تبدأ من هنا.</span></h2>
+        <p class="section-lead" data-reveal="up">تواصل مع فريق الأكاديمية للتعرّف على البرامج التدريبية ومتطلبات الالتحاق، واختر المسار الذي يصنع منك قائداً.</p>
+        <div class="apply__actions" data-reveal="up">
+          <a class="btn btn--gold" href="#contact" data-enquire>استفسر الآن <svg class="icon icon--flip" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" href="#contact">بيانات التواصل</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (values come from js/config.js) ----------------------------->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__intro" data-reveal-group>
+          <p class="eyebrow" data-reveal="up">تواصل معنا</p>
+          <h2 class="section-title" id="contact-title" data-reveal="up">نحن هنا <em>للإجابة.</em></h2>
+          <p class="section-lead" data-reveal="up">يسعدنا الرد على استفساراتكم حول البرامج التدريبية والالتحاق والشراكات المؤسسية.</p>
+          <ul class="social" role="list" aria-label="حسابات التواصل الاجتماعي" data-social hidden></ul>
+        </div>
+
+        <div data-reveal="up">
+          <ul class="contact__list" role="list" data-contact-list>
+            <li class="contact__item" data-contact="phone" hidden>
+              <a class="contact__link" data-contact-link>
+                <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+                <span><span class="contact__label">الهاتف</span><span class="contact__value latin" data-contact-value></span></span>
+              </a>
+            </li>
+            <li class="contact__item" data-contact="whatsapp" hidden>
+              <a class="contact__link" target="_blank" rel="noopener" data-contact-link>
+                <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                <span><span class="contact__label">واتساب</span><span class="contact__value latin" data-contact-value></span></span>
+              </a>
+            </li>
+            <li class="contact__item" data-contact="email" hidden>
+              <a class="contact__link" data-contact-link>
+                <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                <span><span class="contact__label">البريد الإلكتروني</span><span class="contact__value latin" data-contact-value></span></span>
+              </a>
+            </li>
+            <li class="contact__item" data-contact="hours" hidden>
+              <div class="contact__link">
+                <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+                <span><span class="contact__label">ساعات العمل</span><span class="contact__value" data-contact-value></span></span>
+              </div>
+            </li>
+            <li class="contact__item contact__item--wide" data-contact="address" hidden>
+              <a class="contact__link" target="_blank" rel="noopener" data-contact-link>
+                <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+                <span><span class="contact__label">الموقع</span><span class="contact__value" data-contact-value></span></span>
+              </a>
+            </li>
+          </ul>
+          <div class="contact__empty" data-contact-empty>
+            <img src="assets/images/brand/emblem-sm.webp" alt="" width="260" height="233" loading="lazy">
+            <strong>قنوات التواصل الرسمية</strong>
+            <p>تُضاف أرقام الهاتف والبريد الإلكتروني والعنوان الرسمي للأكاديمية قريباً.</p>
+          </div>
+          <figure class="contact__map" data-map hidden>
+            <div class="contact__map-frame" data-map-frame></div>
+            <span class="corners" aria-hidden="true"><i></i></span>
+            <figcaption><a class="link-arrow" href="#" target="_blank" rel="noopener" data-map-link>افتح الموقع في خرائط Google <svg class="icon icon--flip" aria-hidden="true"><use href="#i-arrow"/></svg></a></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer ---------------------------------------------------------------->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="#home" aria-label="أكاديمية بلاك هوك — العودة إلى الأعلى">
+            <img class="brand__mark" src="assets/images/brand/emblem-sm.webp" alt="" width="260" height="233" loading="lazy">
+            <span class="brand__text">
+              <span class="brand__name" lang="en"><span class="text-silver">BLACK</span> <span class="text-gold">HAWK</span></span>
+              <span class="brand__sub">أكاديمية بلاك هوك</span>
+            </span>
+          </a>
+          <p>منظومة تدريبية متكاملة لتأهيل القيادات والكوادر النخبوية، عبر أربع عشرة مهمة تخصصية تبني الكفاءة وتصنع الأمن.</p>
+          <ul class="social" role="list" aria-label="حسابات التواصل الاجتماعي" data-social hidden></ul>
+        </div>
+        <div>
+          <h2 class="footer__title">روابط سريعة</h2>
+          <ul class="footer__links" role="list">
+            <li><a href="#about">عن الأكاديمية</a></li>
+            <li><a href="#missions">المهام التدريبية</a></li>
+            <li><a href="#standards">فلسفتنا التدريبية</a></li>
+            <li><a href="#instructors">المدربون</a></li>
+            <li><a href="#environment">بيئة التدريب</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__title">تواصل</h2>
+          <ul class="footer__links" role="list">
+            <li data-contact="phone" hidden><a class="latin" data-contact-link data-contact-value></a></li>
+            <li data-contact="email" hidden><a class="latin" data-contact-link data-contact-value></a></li>
+            <li data-contact="whatsapp" hidden><a target="_blank" rel="noopener" data-contact-link>واتساب</a></li>
+            <li><a href="#contact">صفحة التواصل</a></li>
+            <li data-privacy hidden><a data-privacy-link>سياسة الخصوصية</a></li>
+            <li><a href="en/" hreflang="en" lang="en" data-lang-switch>English</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> أكاديمية بلاك هوك. جميع الحقوق محفوظة.</p>
+        <p class="footer__motto" lang="en">TRAIN • PROTECT • LEAD</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="العودة إلى الأعلى" data-to-top>
+    <svg class="to-top__ring" viewBox="0 0 50 50" aria-hidden="true" focusable="false">
+      <circle class="to-top__track" cx="25" cy="25" r="23.5"/>
+      <circle class="to-top__bar" cx="25" cy="25" r="23.5" pathLength="1"/>
+    </svg>
+    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+  </button>
+</body>
+</html>

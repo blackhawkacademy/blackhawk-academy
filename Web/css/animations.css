@@ -1,0 +1,233 @@
+/* ==========================================================================
+   BLACK HAWK ACADEMY — motion system
+   • Hero intro is pure CSS (runs once, never blocks content)
+   • Scroll reveals are toggled by IntersectionObserver (js/animations.js)
+   • Everything collapses to a static, fully visible page under
+     prefers-reduced-motion: reduce
+   ========================================================================== */
+
+/* ---------- Keyframes ---------- */
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes line-in {
+  from { opacity: 0; transform: translateY(0.42em); filter: blur(10px); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+@keyframes header-in {
+  from { opacity: 0; transform: translateY(-24px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes trace {
+  0% { stroke-dashoffset: 1; opacity: 1; }
+  52% { stroke-dashoffset: 0; opacity: 1; }
+  100% { stroke-dashoffset: 0; opacity: 0; }
+}
+@keyframes emblem-in {
+  from { opacity: 0; transform: scale(1.07); filter: blur(12px) brightness(0.35); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+@keyframes glow-breathe {
+  0%, 100% { opacity: 0.7; transform: scale(0.97); }
+  50% { opacity: 1; transform: scale(1.03); }
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes spin-rev { to { transform: rotate(-360deg); } }
+@keyframes rays-spin { to { rotate: 360deg; } }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
+}
+@keyframes shine-sweep {
+  0% { background-position: 100% 0; }
+  26%, 100% { background-position: 0% 0; }
+}
+@keyframes glint {
+  0% { opacity: 0; transform: scale(0.2) rotate(0deg); }
+  3% { opacity: 1; transform: scale(1) rotate(45deg); }
+  9% { opacity: 0; transform: scale(0.5) rotate(90deg); }
+  100% { opacity: 0; transform: scale(0.2) rotate(90deg); }
+}
+@keyframes char-in {
+  from { opacity: 0; transform: translateY(55%) scaleY(1.15); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes track-in {
+  from { opacity: 0; letter-spacing: 1.25em; }
+  to { opacity: 1; letter-spacing: 0.62em; }
+}
+@keyframes rule-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes pulse-dot {
+  0% { box-shadow: 0 0 0 0 rgba(231, 203, 134, 0.55); }
+  70%, 100% { box-shadow: 0 0 0 9px rgba(231, 203, 134, 0); }
+}
+@keyframes ring-pulse {
+  0% { opacity: 0.8; transform: scale(0.92); }
+  100% { opacity: 0; transform: scale(1.35); }
+}
+@keyframes scroll-cue {
+  0% { top: -40%; }
+  100% { top: 100%; }
+}
+@keyframes dialog-in {
+  from { opacity: 0; transform: translateY(24px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes numeral-in {
+  from { opacity: 0; transform: translateY(18%); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ---------- Header ---------- */
+.site-header { animation: header-in 1s var(--ease-out) 0.15s both; }
+
+/* ---------- Hero copy ---------- */
+.hero .eyebrow { animation: rise-in 1s var(--ease-out) 0.2s both; }
+.hero__title .line { animation: line-in 1.25s var(--ease-out) both; }
+.hero__title .line:nth-child(1) { animation-delay: 0.32s; }
+.hero__title .line:nth-child(2) { animation-delay: 0.5s; }
+.hero__lead { animation: rise-in 1.1s var(--ease-out) 0.72s both; }
+.hero__actions { animation: rise-in 1.1s var(--ease-out) 0.88s both; }
+.hero__motto { animation: fade-in 1.4s ease-out 1.1s both; }
+.scroll-cue { animation: fade-in 1.2s ease-out 2.6s both; }
+
+/* ---------- The crest ---------- */
+.crest__float { animation: float 9s ease-in-out 3s infinite; }
+
+.crest__rays {
+  animation:
+    fade-in 2.4s ease-out 1.1s both,
+    rays-spin 180s linear infinite;
+}
+.crest__glow {
+  animation:
+    fade-in 1.8s ease-out 0.6s both,
+    glow-breathe 7s ease-in-out 2.4s infinite;
+}
+.seal__ring { stroke-dasharray: 1; animation: draw 2.2s var(--ease-in-out) 0.25s both; }
+.seal__ring--inner { animation-delay: 0.55s; animation-duration: 2.4s; }
+.seal__ticks-wrap { animation: fade-in 1.6s ease-out 1.3s both; }
+.seal__text-wrap { animation: fade-in 2s ease-out 1.6s both; }
+.seal__spin { animation: spin 140s linear infinite; }
+.seal__spin--rev { animation: spin-rev 220s linear infinite; }
+
+.trace {
+  stroke-dasharray: 1;
+  animation: trace 2.7s var(--ease-in-out) 0.15s both;
+}
+.crest__emblem { animation: emblem-in 1.5s var(--ease-out) 0.95s both; }
+.crest__shine { animation: shine-sweep 7.5s var(--ease-in-out) 2.15s infinite both; }
+.crest__glint { animation: glint 9s ease-out 2.75s infinite both; }
+
+/* ---------- Wordmark ---------- */
+.wordmark__char {
+  animation: char-in 0.95s var(--ease-out) both;
+  animation-delay: calc(1.35s + var(--i, 0) * 55ms);
+}
+.wordmark__academy-text { animation: track-in 1.4s var(--ease-out) 1.85s both; }
+.wordmark__rule { animation: rule-grow 1.1s var(--ease-out) 2s both; transform-origin: right; }
+.wordmark__rule:last-child { transform: none; transform-origin: left; background: linear-gradient(270deg, transparent, var(--c-gold)); }
+.wordmark__motto { animation: fade-in 1.4s ease-out 2.25s both; }
+
+/* ---------- Mobile menu items ---------- */
+.mobile-menu.is-open .mobile-menu__list > li,
+.mobile-menu.is-open .mobile-menu__footer {
+  animation: rise-in 0.75s var(--ease-out) both;
+  animation-delay: calc(0.22s + var(--i, 0) * 60ms);
+}
+.mobile-menu.is-open .mobile-menu__footer { --i: 7; }
+
+/* ---------- Missions panel switch ---------- */
+.mission { transition: opacity 0.3s ease, visibility 0s linear 0.3s; }
+.mission.is-active { transition: opacity 0.45s ease 0.05s, visibility 0s; }
+.mission.is-active .mission__numeral { animation: numeral-in 1.1s var(--ease-out) both; }
+.mission.is-active .mission__head > * { animation: rise-in 0.8s var(--ease-out) both; }
+.mission.is-active .mission__head > :nth-child(2) { animation-delay: 0.06s; }
+.mission.is-active .mission__head > :nth-child(3) { animation-delay: 0.12s; }
+.mission.is-active .mission__head > :nth-child(4) { animation-delay: 0.18s; }
+.mission.is-active .mission__col { animation: rise-in 0.85s var(--ease-out) both; }
+.mission.is-active .mission__col:nth-child(1) { animation-delay: 0.22s; }
+.mission.is-active .mission__col:nth-child(2) { animation-delay: 0.3s; }
+.mission.is-active .mission__col:nth-child(3) { animation-delay: 0.38s; }
+
+/* ---------- Scroll reveals (only when JS is running) ---------- */
+html.js [data-reveal] {
+  opacity: 0;
+  transition:
+    opacity 1s var(--ease-out),
+    transform 1.15s var(--ease-out),
+    clip-path 1.3s var(--ease-out),
+    filter 1s var(--ease-out),
+    border-color 0.5s,
+    background-color 0.4s;
+  transition-delay: calc(var(--i, 0) * 90ms + var(--d, 0ms));
+}
+html.js [data-reveal="up"] { transform: translateY(30px); }
+html.js [data-reveal="scale"] { transform: scale(0.965); }
+html.js [data-reveal="blur"] { transform: translateY(14px); filter: blur(8px); }
+html.js [data-reveal="clip"] { opacity: 1; clip-path: inset(100% 0 0 0); }
+html.js [data-reveal="line"] { opacity: 1; transform: scaleX(0); transform-origin: var(--origin-start); }
+html.js [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
+  clip-path: none;
+}
+html.js [data-reveal="clip"].is-visible { clip-path: inset(0 0 0 0); }
+
+/* ---------- Scroll-linked polish (progressive enhancement) ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    @keyframes hero-exit {
+      to { opacity: 0.2; transform: translateY(-70px) scale(0.985); }
+    }
+    @keyframes drift-y {
+      from { translate: 0 -5%; }
+      to { translate: 0 5%; }
+    }
+    @keyframes drift-x {
+      from { translate: 6% 0; }
+      to { translate: -6% 0; }
+    }
+    .hero__layout {
+      animation: hero-exit linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 90vh;
+    }
+    .about__frame img {
+      animation: drift-y linear both;
+      animation-timeline: view();
+      animation-range: cover;
+    }
+    .about__ghost,
+    .film__poster img {
+      animation: drift-x linear both;
+      animation-timeline: view();
+      animation-range: cover;
+    }
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0s !important;
+  }
+  html.js [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    clip-path: none !important;
+  }
+  .crest__glint,
+  .crest__shine { display: none; }
+}
