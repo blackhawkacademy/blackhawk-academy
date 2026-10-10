@@ -833,9 +833,13 @@ html[lang="en"] .hero__motto {
   --tx: 0;
   --ty: 0;
   position: relative;
-  width: min(100%, 520px);
+  width: min(92%, 520px);
   aspect-ratio: 780 / 700;
   direction: ltr;
+  /* The shield sits at 59.87% of the image (the wings extend left).
+     Shift by the difference so the shield, not the picture, is centred over the wordmark,
+     exactly as in the original logo. */
+  translate: -9.87% 0;
 }
 .crest__float {
   position: absolute;

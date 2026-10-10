@@ -128,7 +128,7 @@
   .announce__dot { display: none; }
 
   .hero { padding-block: calc(var(--header-h) + 3.75rem) 4.5rem; }
-  .crest { width: min(82vw, 360px); }
+  .crest { width: min(76vw, 340px); }
   .hero__actions { display: grid; width: 100%; max-width: 24rem; }
   .hero__actions .btn { width: 100%; }
 
