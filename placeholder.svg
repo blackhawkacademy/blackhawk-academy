@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <!-- Placeholder portrait — replace with a real instructor photograph (800×1000, 4:5) -->
+  <defs>
+    <radialGradient id="bg" cx="58%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#3a3423"/>
+      <stop offset=".55" stop-color="#161716"/>
+      <stop offset="1" stop-color="#08090a"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c0d0d"/>
+      <stop offset="1" stop-color="#050606"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7cb86" stop-opacity="0"/>
+      <stop offset=".62" stop-color="#e7cb86" stop-opacity="0"/>
+      <stop offset="1" stop-color="#e7cb86" stop-opacity=".95"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#080909" stop-opacity="0"/>
+      <stop offset="1" stop-color="#080909" stop-opacity=".9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <g stroke="#c6a45b" stroke-opacity=".07" stroke-width="1">
+    <path d="M0 250H800M0 500H800M0 750H800M200 0V1000M400 0V1000M600 0V1000"/>
+  </g>
+  <path d="M400 230C470 230 522 292 522 382C522 450 492 504 456 530L456 582C560 600 650 650 690 730C712 774 720 830 720 890L720 1000L80 1000L80 890C80 830 88 774 110 730C150 650 240 600 344 582L344 530C308 504 278 450 278 382C278 292 330 230 400 230Z" fill="url(#body)"/>
+  <path d="M400 230C470 230 522 292 522 382C522 450 492 504 456 530L456 582C560 600 650 650 690 730C712 774 720 830 720 890L720 1000L80 1000L80 890C80 830 88 774 110 730C150 650 240 600 344 582L344 530C308 504 278 450 278 382C278 292 330 230 400 230Z" fill="none" stroke="url(#rim)" stroke-width="5"/>
+  <rect width="800" height="1000" fill="url(#floor)"/>
+</svg>
