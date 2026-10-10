@@ -99,6 +99,10 @@ Keep each file under **25 MB** if you upload through the GitHub website.
 ### Announcement bar → `js/config.js` → `announcement`
 Change the text, or set `enabled: false`. Change `id` whenever the text changes so visitors who closed the old one see it again.
 
+### After changing a CSS or JS file
+In `index.html` **and** `en.html`, bump the `?v=` number on the `.css` / `.js` links (e.g. `style.css?v=20261010-2` → `?v=20261010-3`).
+Browsers then load the new file immediately instead of a copy cached for up to 10 minutes.
+
 ### Page text
 Section text lives directly in `index.html` (Arabic) and `en.html` (English). Edit both when you change wording.
 

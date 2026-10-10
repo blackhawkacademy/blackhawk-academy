@@ -297,6 +297,33 @@ window.BHA_DATA = {
      ------------------------------------------------------------------------ */
   instructors: [
     {
+      image: 'mohamed-abdelbasset.webp',
+      ar: {
+        name: 'لواء أركان حرب (م) دكتور/ محمد عبد الباسط محمد علي',
+        badge: 'مستشار المركز',
+        role: 'مستشار السلم والأمن الدولي ومكافحة الإرهاب — أفريقيا والشرق الأوسط',
+        bio: 'يشغل حاليًا منصب المدير العام لمركز الساحل والصحراء لمكافحة الإرهاب بالاتحاد الأفريقي. ضابط أركان وقائد سابق بمهام السلام بالأمم المتحدة، وقائد سابق بالقوات المسلحة والقوات الخاصة المصرية، ومؤهل علميًا وخبراتيًا من مصر وأمريكا وإيطاليا والأمم المتحدة في مجال الأمن والتعاون الدولي ومكافحة الإرهاب.',
+        qualifications: [
+          'دكتوراه في الإعلام السياسي — جامعة قناة السويس (مكافحة الإرهاب)',
+          'زميل كلية الحرب العليا (العمليات النفسية)',
+          'مؤهل علميًا وخبراتيًا من مصر وأمريكا وإيطاليا والأمم المتحدة'
+        ],
+        specializations: ['السلم والأمن الدولي', 'مكافحة الإرهاب', 'العمليات النفسية', 'التعاون الدولي']
+      },
+      en: {
+        name: 'Staff Maj. Gen. (Ret.) Dr. Mohamed Abdel-Basset Mohamed Ali',
+        badge: 'Advisor to the Center',
+        role: 'Advisor on International Peace, Security & Counter-Terrorism — Africa and the Middle East',
+        bio: 'Currently Director General of the Sahel and Sahara Center for Counter-Terrorism at the African Union. A former staff officer and commander in United Nations peace missions and a former commander in the Egyptian Armed Forces and Special Forces, with academic and professional qualifications from Egypt, the United States, Italy and the United Nations in security, international cooperation and counter-terrorism.',
+        qualifications: [
+          'PhD in Political Media (Counter-Terrorism) — Suez Canal University',
+          'Fellow of the Higher War College (Psychological Operations)',
+          'Academic and professional qualifications from Egypt, the USA, Italy and the United Nations'
+        ],
+        specializations: ['International Peace & Security', 'Counter-Terrorism', 'Psychological Operations', 'International Cooperation']
+      }
+    },
+    {
       image: 'ahmed-hassan-abdelshafi.webp',
       years: 20,
       ar: {
@@ -330,33 +357,6 @@ window.BHA_DATA = {
           'TOT certification in training'
         ],
         specializations: ['Facility Security', 'Criminal Security', 'VIP & Close Protection', 'Operations Management', 'Crisis & Terrorist-Incident Management']
-      }
-    },
-    {
-      image: 'mohamed-abdelbasset.webp',
-      ar: {
-        name: 'لواء أركان حرب (م) دكتور/ محمد عبد الباسط محمد علي',
-        badge: 'مستشار المركز',
-        role: 'مستشار السلم والأمن الدولي ومكافحة الإرهاب — أفريقيا والشرق الأوسط',
-        bio: 'يشغل حاليًا منصب المدير العام لمركز الساحل والصحراء لمكافحة الإرهاب بالاتحاد الأفريقي. ضابط أركان وقائد سابق بمهام السلام بالأمم المتحدة، وقائد سابق بالقوات المسلحة والقوات الخاصة المصرية، ومؤهل علميًا وخبراتيًا من مصر وأمريكا وإيطاليا والأمم المتحدة في مجال الأمن والتعاون الدولي ومكافحة الإرهاب.',
-        qualifications: [
-          'دكتوراه في الإعلام السياسي — جامعة قناة السويس (مكافحة الإرهاب)',
-          'زميل كلية الحرب العليا (العمليات النفسية)',
-          'مؤهل علميًا وخبراتيًا من مصر وأمريكا وإيطاليا والأمم المتحدة'
-        ],
-        specializations: ['السلم والأمن الدولي', 'مكافحة الإرهاب', 'العمليات النفسية', 'التعاون الدولي']
-      },
-      en: {
-        name: 'Staff Maj. Gen. (Ret.) Dr. Mohamed Abdel-Basset Mohamed Ali',
-        badge: 'Advisor to the Center',
-        role: 'Advisor on International Peace, Security & Counter-Terrorism — Africa and the Middle East',
-        bio: 'Currently Director General of the Sahel and Sahara Center for Counter-Terrorism at the African Union. A former staff officer and commander in United Nations peace missions and a former commander in the Egyptian Armed Forces and Special Forces, with academic and professional qualifications from Egypt, the United States, Italy and the United Nations in security, international cooperation and counter-terrorism.',
-        qualifications: [
-          'PhD in Political Media (Counter-Terrorism) — Suez Canal University',
-          'Fellow of the Higher War College (Psychological Operations)',
-          'Academic and professional qualifications from Egypt, the USA, Italy and the United Nations'
-        ],
-        specializations: ['International Peace & Security', 'Counter-Terrorism', 'Psychological Operations', 'International Cooperation']
       }
     },
     {
